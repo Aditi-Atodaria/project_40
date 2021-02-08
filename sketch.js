@@ -92,7 +92,9 @@ function draw() {
       gameState = PLAY
     }
   }else if(gameState ===BUTTON){
-    //text("press space to start",250,300)
+    fill("white");
+    textSize(20);
+    text("press space to start",250,300)
     if (keyDown("space")){
       bird.destroy()
       pipes.destroyEach()
